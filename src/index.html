@@ -110,14 +110,6 @@
         font-weight: bold;
       }
 
-      .projects img {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-      }
-
       .projects p {
         color: #666;
       }
@@ -182,6 +174,7 @@
     </style>
     <style>
       .openSource {
+        position: relative;
       }
 
       .openSource h4 {
@@ -212,6 +205,14 @@
       }
 
       .openSource h3 {
+      }
+
+      .openSource img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 120px;
+        right: 20px;
       }
     </style>
     <style>
@@ -346,6 +347,25 @@
           </ul>
         </div>
       </section>
+      <!-- 其他链接 -->
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://juejin.cn/user/3878732755897960" target="_blank"
+              >我的掘金</a
+            >，已分享几十篇的技术文章（学习笔记、日常解决bug记录）
+          </li>
+          <li>
+            <a href="https://jokerguo.github.io/" target="_blank">我的博客</a
+            >，使用hugo+Github搭建的个人博客,目前已有30篇技术文章
+          </li>
+          <li>
+            <a href="https://github.com/Jokerguo" target="_blank">我的 GitHub</a
+            >，已有超500次提交记录
+          </li>
+        </ul>
+      </section>
       <!-- 工作经历 -->
       <section class="jobs">
         <h2>工作经历</h2>
@@ -354,9 +374,53 @@
             <header>
               <h3>杭州星麦云商科技有限公司</h3>
               <h4>前端开发工程师</h4>
+              <h4>（2021.6 - 至今）</h4>
             </header>
-            <p>项目名称： TagVV内容云</p>
-            <p>项目时间： 2021.12 - 至今</p>
+          </li>
+          <li>
+            <header>
+              <h3>华夏视清数字技术（江苏）有限公司</h3>
+              <h4>前端开发工程师</h4>
+              <h4>（2020.5 - 2021.5）</h4>
+            </header>
+          </li>
+          <li>
+            <header>
+              <h3>江苏丰华联合科技有限公司</h3>
+              <h4>前端工程师（实习）</h4>
+              <h4>（2019.9 - 2020.3）</h4>
+            </header>
+            <!-- <span><time>2018年9月</time>~<time>2020年3月</time></span>
+            <ul>
+              <li>使用VUE+Element开发标注平台页面</li>
+              <li>负责维护标注平台的页面样式，兼容各浏览器</li>
+              <li>测试标注平台，并解决前端问题</li>
+            </ul>-->
+          </li>
+        </ol>
+      </section>
+      <!-- 项目经历 -->
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <p>项目名称： 视频生产（SumVideo）</p>
+            <p>项目周期： 2022.3 - 至今</p>
+            <p>
+              项目描述：SumVideo提供内容生产到内容分发的一站式服务，加速企业短视频内容智能孵化
+            </p>
+            <p>我的职责：</p>
+            <p>1. 使用 <strong>Vue2+Element</strong>开发</p>
+            <p>
+              2. 负责流水线、创意素材、素材标签的模块开发工作
+            </p>
+            <p>3. 对应小程序的采集以及上传素材功能开发</p>
+            <p>4. 整个SumVideo的后续版本迭代以及维护工作</p>
+            <p>5. 接手客户端(electron)的维护工作</p>
+          </li>
+          <li style="page-break-before: always">
+            <p>项目名称： 矩阵营销（TagVV）</p>
+            <p>项目周期： 2021.12 - 至今</p>
             <p>
               项目描述：TagVV是帮助企业搭建数字化内容营销矩阵的一站式解决方案，通过帮助企业建立内容中台，形成矩阵化的内容协作生产体系。
             </p>
@@ -364,33 +428,31 @@
             <p>1. 使用 <strong>Vue3+Element Plus</strong>开发</p>
             <p>
               2.
-              负责系统设置、小程序装修两大模块的开发及维护，参与短视频智能生产的部分模块开发工作
+              负责系统设置、 <strong>小程序装修</strong>两大模块的开发及维护，参与短视频智能生产的部分模块开发工作
             </p>
             <p>3. 相关功能的小程序开发（主要适配微信、飞书）</p>
             <p>4. 迁移直播管家项目中部分功能至TagVV</p>
-            <br />
-            <p>项目名称： SumLive(直播管家)</p>
-            <p>项目时间： 2021.6 - 2021.12</p>
+          </li>
+          <li >
+            <p>项目名称： 直播管家（SumLive）</p>
+            <p>项目周期 2021.6 - 2021.12</p>
             <p>
               项目描述：直播管家是面向企业自播的数字化运营管理系统，可通过数字化的方式实现直播现场全息复盘、智能场控辅助、在线知识课程学习、可视化排班等
             </p>
             <p>我的职责：</p>
             <p>1. 使用 <strong>Vue2+View UI</strong>开发</p>
             <p>
-              2.负责的主要功能模块为：场次对比、智能场控、直播复盘、课程学习、付费版本等
+              2.负责的主要功能模块为： <strong>场次对比</strong> 、智能场控、<strong>直播复盘</strong> 、课程学习、 <strong>付费版本</strong>等
             </p>
             <p>3. 直播管家的后续需求及后期维护、以及直播管家插件、大屏的维护</p>
           </li>
+<!--    
           <li>
-            <header style="page-break-before: always">
-              <h3>华夏视清数字技术（江苏）有限公司</h3>
-              <h4>前端开发工程师</h4>
-            </header>
             <p>项目名称： 天津市特种设备动态信息监管系统</p>
-            <p>项目时间： 2020.7 - 2021.5</p>
+            <p>项目周期： 2020.7 - 2021.5</p>
             <ul>
               <li>使用vue2+Element开发</li>
-              <!--          <li>基于elementUI组件开发自定义组件，包括单位选择框、省市区街道四级框、流程展示等</li>-->
+              <li>基于elementUI组件开发自定义组件供全局使用，包括单位选择框、省市区街道四级框、流程展示等</li>
               <li>使用baidu-map、ECharts、流程图等插件</li>
             </ul>
             <p>项目名称： 无锡智慧停车后台管理系统</p>
@@ -400,25 +462,13 @@
                 使用Vue2+Element独立完成无锡停车后台管理系统,与后端配合，完成页面的功能对接
               </li>
             </ul>
-          </li>
-          <!-- <li>
-            <header>
-              <h3>江苏丰华联合科技有限公司</h3>
-              <h4>前端工程师（实习）</h4>
-            </header>
-            <span><time>2018年9月</time>~<time>2020年3月</time></span>
-            <ul>
-              <li>使用VUE+Element开发标注平台页面</li>
-              <li>负责维护标注平台的页面样式，兼容各浏览器</li>
-              <li>测试标注平台，并解决前端问题</li>
-            </ul>
           </li> -->
         </ol>
       </section>
-      <!-- 项目经历 -->
-      <section class="projects">
-        <h2>项目经历</h2>
-        <ol>
+      <!-- 开源项目 -->
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
           <li class="qrcode">
             <header>
               <h3>记账小程序</h3>
@@ -448,24 +498,6 @@
               alt="记账小程序"
             />
           </li>
-
-          <!--      <li>-->
-          <!--        <header>-->
-          <!--          <h3>番茄闹钟</h3>-->
-          <!--          <span>-->
-          <!--             <a href="https://github.com/Jokerguo/tomato-clock">源码链接</a>-->
-          <!--             <a href="http://jokerguo.github.io/tomato-clock">项目预览</a>-->
-          <!--           </span>-->
-          <!--        </header>-->
-          <!--        <p>-->
-          <!--          一个基于 <strong>React</strong> / <strong>TypeScript</strong> 完成的前端分离的番茄闹钟应用。-->
-          <!--        </p>-->
-          <!--        <p>使用到的主要技术栈 : React, Redux, react-router, TypeScript, SCSS, axios,</p>-->
-          <!--        <h4>项目总结</h4>-->
-          <!--        <p>使用react-router axios 完成登录注册页功能</p>-->
-          <!--        <p>使用Redux全局管理我的数据</p>-->
-          <!--&lt;!&ndash;        <p>完整的历史纪录，可随时恢复或删除</p>&ndash;&gt;-->
-          <!--      </li>-->
           <li>
             <header>
               <h3>UI 组件库</h3>
@@ -488,26 +520,14 @@
             </p>
             <!--        <p>发布到了npm,并使用Vuepress<strong>制作了官方文档</strong></p>-->
           </li>
-        </ol>
-      </section>
-      <!-- 开源项目 -->
-      <section class="openSource">
-        <h2>开源项目</h2>
-        <ul>
           <li>
             <header>
-              <h3>DIY导航栏</h3>
+              <h3>翻译器(fanyi-g)</h3>
               <span>
-                <a href="https://github.com/Jokerguo/jokerguo-nav">源码链接</a>
-                <a href="http://jokerguo.github.io/jokerguo-nav/dist/index.html"
-                  >项目预览</a
-                >
+                <a href="https://github.com/Jokerguo/fanyi">源码链接</a>
               </span>
             </header>
-            <p>主要使用jQuery制作而成的导航页面</p>
-            <p>
-              这是一个DIY的导航首页,可以设置为浏览器首页，用来搜素，添加常用网站。是一个属于自己的首页
-            </p>
+            <p>使用commander库， <strong>nodejs</strong>调用百度翻译api实现的翻译工具，已发布npm</p>
           </li>
 
           <li class="page2">
@@ -540,25 +560,7 @@
       </li> -->
         </ul>
       </section>
-      <!-- 其他链接 -->
-      <section class="others">
-        <h2>其他链接</h2>
-        <ul>
-          <li>
-            <a href="https://juejin.cn/user/3878732755897960" target="_blank"
-              >我的掘金</a
-            >，已分享几十篇的技术文章（学习笔记、日常解决bug记录）
-          </li>
-          <li>
-            <a href="https://jokerguo.github.io/" target="_blank">我的博客</a
-            >，使用hugo+Github搭建的个人博客,目前已有30篇技术文章
-          </li>
-          <li>
-            <a href="https://github.com/Jokerguo" target="_blank">我的 GitHub</a
-            >，已有超500次提交记录
-          </li>
-        </ul>
-      </section>
+
       <!-- 教育经历 -->
       <section class="education">
         <h2>教育经历</h2>
