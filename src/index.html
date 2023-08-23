@@ -1,575 +1,576 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
+<head>
+  <meta charset="UTF-8"/>
+  <meta
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
-    />
-    <title>我的简历</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+  />
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {
+    }
+
+    p {
+      margin: 0.3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .projects .qrcode {
+      position: relative;
+    }
+
+    /* page-break-before: always; */
+
+    .projects h4 {
+      padding: 16px 0 0 0;
+      font-weight: bold;
+    }
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects > ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects > ol > li {
+      margin-bottom: 24px;
+    }
+
+    .projects > ol > li > header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects > ol > li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {
+    }
+
+    #skills {
+      margin-top: 40px;
+      width: 500px;
+      height: 270px;
+    }
+
+    .skills > .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills > .wrapper > :first-child {
+      margin-right: 24px;
+    }
+
+    .skills > .wrapper > #skills {
+    }
+
+    .skills > .wrapper > ul {
+      color: #666;
+    }
+
+    .skills > .wrapper strong {
+      color: #f60;
+    }
+
+    .skills > .wrapper > ul > li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {
+      position: relative;
+    }
+
+    .openSource h4 {
+      padding: 10px 0 0 0;
+      font-weight: bold;
+    }
+
+    .openSource > h2 {
+    }
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource > ul {
+    }
+
+    .openSource > ul > li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {
+    }
+
+    .openSource img {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 120px;
+      right: 20px;
+    }
+  </style>
+  <style>
+    .jobs {
+    }
+
+    .jobs > h2 {
+    }
+
+    .jobs > ol {
+    }
+
+    .jobs > ol > li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header > h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header > h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header > span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+
+    .jobs ul li {
+      padding: 4px 0;
+    }
+  </style>
+  <style>
+    @media (max-width: 500px) {
       body {
-        background: #eee;
-        margin: 20px 0;
+        margin: 0;
       }
 
       article {
-        width: 21cm;
-        min-height: 29.7cm;
-        background: white;
-        margin: 0 auto;
-        overflow: auto;
-        padding: 1em;
-      }
-    </style>
-    <style media="print">
-      body {
-        margin: 0;
-      }
-
-      .page2 {
-        margin-top: 30px;
-      }
-    </style>
-    <style>
-      body {
-      }
-
-      p {
-        margin: 0.3em 0;
-      }
-
-      h1 {
-        font-size: 25px;
-        margin-top: 0;
-      }
-
-      h4,
-      h5,
-      h6 {
-        font-weight: normal;
-      }
-
-      ol,
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      strong {
-        font-weight: normal;
-        color: #f60;
-      }
-
-      a {
-        color: #999;
-        text-decoration: none;
-        border-bottom: 1px solid;
-      }
-
-      p,
-      li {
-        color: #666;
-      }
-
-      strong {
-        font-weight: normal;
-      }
-
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-      }
-
-      .bio {
-        position: relative;
+        width: auto;
+        height: auto;
       }
 
       .bio img {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-    </style>
-    <style>
-      .projects .qrcode {
-        position: relative;
+        display: none;
       }
 
-      /* page-break-before: always; */
-
-      .projects h4 {
-        padding: 16px 0 0 0;
-        font-weight: bold;
-      }
-
-      .projects p {
-        color: #666;
-      }
-
-      .projects strong {
-        color: #f60;
-      }
-
-      .projects > ol {
-        margin-top: 0;
-        list-style-position: inside;
-        padding: 0;
-      }
-
-      .projects > ol > li {
-        margin-bottom: 24px;
-      }
-
-      .projects > ol > li > header {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .projects > ol > li h3 {
-        display: inline-block;
-      }
-    </style>
-    <style>
-      .skills {
+      .skills .wrapper {
+        flex-direction: column;
       }
 
       #skills {
-        margin-top: 40px;
-        width: 500px;
-        height: 270px;
-      }
-
-      .skills > .wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .skills > .wrapper > :first-child {
-        margin-right: 24px;
-      }
-
-      .skills > .wrapper > #skills {
-      }
-
-      .skills > .wrapper > ul {
-        color: #666;
-      }
-
-      .skills > .wrapper strong {
-        color: #f60;
-      }
-
-      .skills > .wrapper > ul > li {
-        line-height: 1.2;
-        margin-bottom: 8px;
-      }
-    </style>
-    <style>
-      .openSource {
-        position: relative;
-      }
-
-      .openSource h4 {
-        padding: 10px 0 0 0;
-        font-weight: bold;
-      }
-
-      .openSource > h2 {
-      }
-
-      .openSource header img {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      .openSource > ul {
-      }
-
-      .openSource > ul > li {
-        margin-bottom: 24px;
-      }
-
-      .openSource header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .openSource h3 {
-      }
-
-      .openSource img {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 120px;
-        right: 20px;
-      }
-    </style>
-    <style>
-      .jobs {
-      }
-
-      .jobs > h2 {
-      }
-
-      .jobs > ol {
-      }
-
-      .jobs > ol > li {
-        margin: 12px 0;
+        width: auto;
       }
 
       .jobs header {
-        display: flex;
-        color: #666;
-        margin-bottom: 12px;
+        flex-direction: column;
       }
 
-      .jobs header > h3 {
-        font-size: 18px;
-        color: #333;
-      }
-
-      .jobs header > h4 {
-        margin-left: 1em;
-        font-size: 18px;
-      }
-
+      .jobs header > h3,
+      .jobs header > h4,
       .jobs header > span {
-        font-size: 18px;
-        margin-left: auto;
+        margin: 0;
       }
-
-      .jobs ul li {
-        padding: 4px 0;
-      }
-    </style>
-    <style>
-      @media (max-width: 500px) {
-        body {
-          margin: 0;
-        }
-
-        article {
-          width: auto;
-          height: auto;
-        }
-
-        .bio img {
-          display: none;
-        }
-
-        .skills .wrapper {
-          flex-direction: column;
-        }
-
-        #skills {
-          width: auto;
-        }
-
-        .jobs header {
-          flex-direction: column;
-        }
-
-        .jobs header > h3,
-        .jobs header > h4,
-        .jobs header > span {
-          margin: 0;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <article>
-      <!--    个人信息-->
-      <section class="bio">
-        <h1>个人信息</h1>
-        <img
-          src="https://i.loli.net/2020/03/26/YcJRNESgGkaXyZe.jpg"
-          alt=""
-          width="120"
-          height="150"
-        />
-        <p>郭东生</p>
-        <p>男 | 24岁 | 前端开发工程师 | 杭州</p>
+    }
+  </style>
+</head>
+<body>
+<article>
+  <!--    个人信息-->
+  <section class="bio">
+    <h1>个人信息</h1>
+    <img
+        src="https://i.loli.net/2020/03/26/YcJRNESgGkaXyZe.jpg"
+        alt=""
+        width="120"
+        height="150"
+    />
+    <p>郭东生</p>
+    <p>男 | 25岁 | 前端开发工程师 | 杭州</p>
+    <p>
+      手机: <a href="tel:18168896329">18168896329</a> | 微信号：joker__guo |
+      邮箱：<a href="mailto:1977036313@qq.com">1977036313@qq.com</a>
+    </p>
+  </section>
+  <!-- 技能块 -->
+  <section class="skills">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <!-- <div id="skills"></div> -->
+      <ul>
+        <li>
+          熟练掌握 <strong>Vue2、Vue3</strong>的使用，包括 @vue/cli、Vue
+          Router、Vuex 等
+        </li>
+        <li>
+          熟练掌握 <strong>React</strong>使用，包括 create-react-app、React
+          Router、Redux 等
+        </li>
+        <li>
+          熟练掌握 <strong>小程序开发</strong> ，有一定的uni-app项目经验
+        </li>
+        <li>熟悉 ES6语法，包括 let / Promise / 箭头函数 /... / 析构赋值</li>
+        <li>能熟练使用<strong>HTML5</strong>更具有语义化的标签</li>
+        <li>
+          熟悉前端工作流程，和产品有效沟通，能将设计稿<strong
+        >完美还原</strong
+        >
+        </li>
+        <li>
+          熟练使用
+          <strong>CSS/SCSS</strong>
+          ，掌握<strong>flex</strong>布局,熟悉grid布局，对文档流、盒模型有充分了解
+        </li>
+        <li>
+          熟悉<strong>前后端分离</strong>技术，包括 AJAX、JSONP、CORS 等
+        </li>
+        <li>
+          掌握
+          <strong>git、yarn/npm</strong> 的使用,熟练代码版本控制、部署流程
+        </li>
+        <li>了解 <strong>TypeScript、Webpack、vite</strong></li>
+      </ul>
+    </div>
+  </section>
+  <!-- 其他链接 -->
+  <section class="others">
+    <h2>其他链接</h2>
+    <ul>
+      <li>
+        <a href="https://juejin.cn/user/3878732755897960" target="_blank"
+        >我的掘金</a
+        >，已分享几十篇的技术文章（学习笔记、日常解决bug记录）
+      </li>
+      <li>
+        <a href="https://jokerguo.github.io/" target="_blank">我的博客</a
+        >，使用hugo+Github搭建的个人博客,目前已有30篇技术文章
+      </li>
+      <li>
+        <a href="https://github.com/Jokerguo" target="_blank">我的 GitHub</a
+        >，已有超500次提交记录
+      </li>
+    </ul>
+  </section>
+  <!-- 工作经历 -->
+  <section class="jobs">
+    <h2>工作经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>杭州星麦云商科技有限公司</h3>
+          <h4>前端开发工程师</h4>
+          <h4>（2021.6 - 至今）</h4>
+        </header>
+      </li>
+      <li>
+        <header>
+          <h3>华夏视清数字技术（江苏）有限公司</h3>
+          <h4>前端开发工程师</h4>
+          <h4>（2020.5 - 2021.5）</h4>
+        </header>
+      </li>
+      <li>
+        <header>
+          <h3>江苏丰华联合科技有限公司</h3>
+          <h4>前端工程师（实习）</h4>
+          <h4>（2019.9 - 2020.3）</h4>
+        </header>
+        <!-- <span><time>2018年9月</time>~<time>2020年3月</time></span>
+        <ul>
+          <li>使用VUE+Element开发标注平台页面</li>
+          <li>负责维护标注平台的页面样式，兼容各浏览器</li>
+          <li>测试标注平台，并解决前端问题</li>
+        </ul>-->
+      </li>
+    </ol>
+  </section>
+  <!-- 项目经历 -->
+  <section class="projects">
+    <h2>项目经历</h2>
+    <ol>
+      <li>
+        <p>项目名称： 视频生产（SumVideo）</p>
+        <p>项目周期： 2022.3 - 至今</p>
         <p>
-          手机: <a href="tel:18168896329">18168896329</a> | 微信号：joker__guo |
-          邮箱：<a href="mailto:1977036313@qq.com">1977036313@qq.com</a>
+          项目描述：SumVideo提供内容生产到内容分发的一站式服务，加速企业短视频内容智能孵化
         </p>
-      </section>
-      <!-- 技能块 -->
-      <section class="skills">
-        <h2>技能</h2>
-        <div class="wrapper">
-          <!-- <div id="skills"></div> -->
-          <ul>
-            <li>
-              熟练掌握 <strong>Vue2、Vue3</strong>的使用，包括 @vue/cli、Vue
-              Router、Vuex 等
-            </li>
-            <li>
-              熟练掌握 <strong>React</strong>使用，包括 create-react-app、React
-              Router、Redux 等
-            </li>
-            <li>
-              熟练掌握 <strong>小程序开发</strong> ，有一定的uni-app项目经验
-            </li>
-            <li>熟悉 ES6语法，包括 let / Promise / 箭头函数 /... / 析构赋值</li>
-            <li>能熟练使用<strong>HTML5</strong>更具有语义化的标签</li>
-            <li>
-              熟悉前端工作流程，和产品有效沟通，能将设计稿<strong
-                >完美还原</strong
-              >
-            </li>
-            <li>
-              熟练使用
-              <strong>CSS/SCSS</strong>
-              ，掌握<strong>flex</strong>布局,熟悉grid布局，对文档流、盒模型有充分了解
-            </li>
-            <li>
-              熟悉<strong>前后端分离</strong>技术，包括 AJAX、JSONP、CORS 等
-            </li>
-            <li>
-              掌握
-              <strong>git、yarn/npm</strong> 的使用,熟练代码版本控制、部署流程
-            </li>
-            <li>了解 <strong>TypeScript、Webpack、vite</strong></li>
-          </ul>
-        </div>
-      </section>
-      <!-- 其他链接 -->
-      <section class="others">
-        <h2>其他链接</h2>
-        <ul>
-          <li>
-            <a href="https://juejin.cn/user/3878732755897960" target="_blank"
-              >我的掘金</a
-            >，已分享几十篇的技术文章（学习笔记、日常解决bug记录）
-          </li>
-          <li>
-            <a href="https://jokerguo.github.io/" target="_blank">我的博客</a
-            >，使用hugo+Github搭建的个人博客,目前已有30篇技术文章
-          </li>
-          <li>
-            <a href="https://github.com/Jokerguo" target="_blank">我的 GitHub</a
-            >，已有超500次提交记录
-          </li>
-        </ul>
-      </section>
-      <!-- 工作经历 -->
-      <section class="jobs">
-        <h2>工作经历</h2>
-        <ol>
-          <li>
-            <header>
-              <h3>杭州星麦云商科技有限公司</h3>
-              <h4>前端开发工程师</h4>
-              <h4>（2021.6 - 至今）</h4>
-            </header>
-          </li>
-          <li>
-            <header>
-              <h3>华夏视清数字技术（江苏）有限公司</h3>
-              <h4>前端开发工程师</h4>
-              <h4>（2020.5 - 2021.5）</h4>
-            </header>
-          </li>
-          <li>
-            <header>
-              <h3>江苏丰华联合科技有限公司</h3>
-              <h4>前端工程师（实习）</h4>
-              <h4>（2019.9 - 2020.3）</h4>
-            </header>
-            <!-- <span><time>2018年9月</time>~<time>2020年3月</time></span>
-            <ul>
-              <li>使用VUE+Element开发标注平台页面</li>
-              <li>负责维护标注平台的页面样式，兼容各浏览器</li>
-              <li>测试标注平台，并解决前端问题</li>
-            </ul>-->
-          </li>
-        </ol>
-      </section>
-      <!-- 项目经历 -->
-      <section class="projects">
-        <h2>项目经历</h2>
-        <ol>
-          <li>
-            <p>项目名称： 视频生产（SumVideo）</p>
-            <p>项目周期： 2022.3 - 至今</p>
-            <p>
-              项目描述：SumVideo提供内容生产到内容分发的一站式服务，加速企业短视频内容智能孵化
-            </p>
-            <p>我的职责：</p>
-            <p>1. 使用 <strong>Vue2+Element</strong>开发</p>
-            <p>
-              2. 负责流水线、创意素材、素材标签的模块开发工作
-            </p>
-            <p>3. 对应小程序的采集以及上传素材功能开发</p>
-            <p>4. 整个SumVideo的后续版本迭代以及维护工作</p>
-            <p>5. 接手客户端(electron)的维护工作</p>
-          </li>
-          <li style="page-break-before: always">
-            <p>项目名称： 矩阵营销（TagVV）</p>
-            <p>项目周期： 2021.12 - 至今</p>
-            <p>
-              项目描述：TagVV是帮助企业搭建数字化内容营销矩阵的一站式解决方案，通过帮助企业建立内容中台，形成矩阵化的内容协作生产体系。
-            </p>
-            <p>我的职责：</p>
-            <p>1. 使用 <strong>Vue3+Element Plus</strong>开发</p>
-            <p>
-              2.
-              负责系统设置、 <strong>小程序装修</strong>两大模块的开发及维护，参与短视频智能生产的部分模块开发工作
-            </p>
-            <p>3. 相关功能的小程序开发（主要适配微信、飞书）</p>
-            <p>4. 迁移直播管家项目中部分功能至TagVV</p>
-          </li>
-          <li >
-            <p>项目名称： 直播管家（SumLive）</p>
-            <p>项目周期 2021.6 - 2021.12</p>
-            <p>
-              项目描述：直播管家是面向企业自播的数字化运营管理系统，可通过数字化的方式实现直播现场全息复盘、智能场控辅助、在线知识课程学习、可视化排班等
-            </p>
-            <p>我的职责：</p>
-            <p>1. 使用 <strong>Vue2+View UI</strong>开发</p>
-            <p>
-              2.负责的主要功能模块为： <strong>场次对比</strong> 、智能场控、<strong>直播复盘</strong> 、课程学习、 <strong>付费版本</strong>等
-            </p>
-            <p>3. 直播管家的后续需求及后期维护、以及直播管家插件、大屏的维护</p>
-          </li>
-<!--    
-          <li>
-            <p>项目名称： 天津市特种设备动态信息监管系统</p>
-            <p>项目周期： 2020.7 - 2021.5</p>
-            <ul>
-              <li>使用vue2+Element开发</li>
-              <li>基于elementUI组件开发自定义组件供全局使用，包括单位选择框、省市区街道四级框、流程展示等</li>
-              <li>使用baidu-map、ECharts、流程图等插件</li>
-            </ul>
-            <p>项目名称： 无锡智慧停车后台管理系统</p>
-            <p>项目时间： 2020.5 - 2020.7</p>
-            <ul>
-              <li>
-                使用Vue2+Element独立完成无锡停车后台管理系统,与后端配合，完成页面的功能对接
-              </li>
-            </ul>
-          </li> -->
-        </ol>
-      </section>
-      <!-- 开源项目 -->
-      <section class="openSource">
-        <h2>开源项目</h2>
-        <ul>
-          <li class="qrcode">
-            <header>
-              <h3>记账小程序</h3>
-              <span>
+        <p>我的职责：</p>
+        <p>1. 使用 <strong>Vue2+Element</strong>开发</p>
+        <p>
+          2. 负责流水线、创意素材、素材标签的模块开发工作
+        </p>
+        <p>3. 对应小程序的采集以及上传素材功能开发</p>
+        <p>4. 整个SumVideo的后续版本迭代以及维护工作</p>
+        <p>5. 接手客户端(electron)的维护工作</p>
+      </li>
+      <li style="page-break-before: always">
+        <p>项目名称： 矩阵营销（TagVV）</p>
+        <p>项目周期： 2021.12 - 至今</p>
+        <p>
+          项目描述：TagVV是帮助企业搭建数字化内容营销矩阵的一站式解决方案，通过帮助企业建立内容中台，形成矩阵化的内容协作生产体系。
+        </p>
+        <p>我的职责：</p>
+        <p>1. 使用 <strong>Vue3+Element Plus</strong>开发</p>
+        <p>
+          2.
+          负责系统设置、 <strong>小程序装修</strong>两大模块的开发及维护，参与短视频智能生产的部分模块开发工作
+        </p>
+        <p>3. 相关功能的小程序开发（主要适配微信、飞书）</p>
+        <p>4. 迁移直播管家项目中部分功能至TagVV</p>
+      </li>
+      <li>
+        <p>项目名称： 直播管家（SumLive）</p>
+        <p>项目周期 2021.6 - 2021.12</p>
+        <p>
+          项目描述：直播管家是面向企业自播的数字化运营管理系统，可通过数字化的方式实现直播现场全息复盘、智能场控辅助、在线知识课程学习、可视化排班等
+        </p>
+        <p>我的职责：</p>
+        <p>1. 使用 <strong>Vue2+View UI</strong>开发</p>
+        <p>
+          2.负责的主要功能模块为： <strong>场次对比</strong> 、智能场控、<strong>直播复盘</strong> 、课程学习、
+          <strong>付费版本</strong>等
+        </p>
+        <p>3. 直播管家的后续需求及后期维护、以及直播管家插件、大屏的维护</p>
+      </li>
+      <!--
+                <li>
+                  <p>项目名称： 天津市特种设备动态信息监管系统</p>
+                  <p>项目周期： 2020.7 - 2021.5</p>
+                  <ul>
+                    <li>使用vue2+Element开发</li>
+                    <li>基于elementUI组件开发自定义组件供全局使用，包括单位选择框、省市区街道四级框、流程展示等</li>
+                    <li>使用baidu-map、ECharts、流程图等插件</li>
+                  </ul>
+                  <p>项目名称： 无锡智慧停车后台管理系统</p>
+                  <p>项目时间： 2020.5 - 2020.7</p>
+                  <ul>
+                    <li>
+                      使用Vue2+Element独立完成无锡停车后台管理系统,与后端配合，完成页面的功能对接
+                    </li>
+                  </ul>
+                </li> -->
+    </ol>
+  </section>
+  <!-- 开源项目 -->
+  <section class="openSource">
+    <h2>开源项目</h2>
+    <ul>
+      <li class="qrcode">
+        <header>
+          <h3>记账小程序</h3>
+          <span>
                 <a href="https://github.com/Jokerguo/react-demo">源码链接</a>
                 <span> 扫描二维码进行预览</span>
               </span>
-            </header>
-            <p>
-              Manager是一款基于
-              <strong
-                >React18、react-router、自定义Hooks、webpack、LocalStorage</strong
-              >
-              实现的极简的移动端记账应用。
-            </p>
-            <p>
-              主要技术栈 : styled-components(css in
-              js)、svg-sprite-loader(配置webpack使用svg)
-            </p>
-            <h4>项目总结</h4>
-            <p>使用自定义Hooks 代替了Redux进行数据管理，使用浏览器缓存数据</p>
-            <p>
-              这个项目的完成,让我对React函数组件的认识更加全面,对TypeScript也是慢慢了解。
-            </p>
-            <img
-              src="https://i.loli.net/2021/05/19/2YBtAC5Une18sML.png"
-              alt="记账小程序"
-            />
-          </li>
-          <li>
-            <header>
-              <h3>UI 组件库</h3>
-              <span>
+        </header>
+        <p>
+          Manager是一款基于
+          <strong
+          >React18、react-router、自定义Hooks、webpack、LocalStorage</strong
+          >
+          实现的极简的移动端记账应用。
+        </p>
+        <p>
+          主要技术栈 : styled-components(css in
+          js)、svg-sprite-loader(配置webpack使用svg)
+        </p>
+        <h4>项目总结</h4>
+        <p>使用自定义Hooks 代替了Redux进行数据管理，使用浏览器缓存数据</p>
+        <p>
+          这个项目的完成,让我对React函数组件的认识更加全面,对TypeScript也是慢慢了解。
+        </p>
+        <img
+            src="https://i.loli.net/2021/05/19/2YBtAC5Une18sML.png"
+            alt="记账小程序"
+        />
+      </li>
+      <li>
+        <header>
+          <h3>UI 组件库</h3>
+          <span>
                 <a href="https://github.com/Jokerguo/gulu">源码链接</a>
                 <a href="http://jokerguo.github.io/gulu/">项目预览</a>
               </span>
-            </header>
-            <p>
-              该项目是参照Framework7、Ant Design、Element
-              UI等UI库思路，做的一个基于Vue的简易UI组件库
-            </p>
-            <h4>项目总结</h4>
-            <p>
-              目前已支持按钮、输入框、网格、布局、Toast、Tab、Popover、Collapse
-            </p>
-            <p>
-              每个组件均经历过需求分析到 <strong>Mocha单元测试</strong> ，并用
-              <strong>Travis ci 实现持续集成</strong>
-            </p>
-            <!--        <p>发布到了npm,并使用Vuepress<strong>制作了官方文档</strong></p>-->
-          </li>
-          <li>
-            <header>
-              <h3>翻译器(fanyi-g)</h3>
-              <span>
+        </header>
+        <p>
+          该项目是参照Framework7、Ant Design、Element
+          UI等UI库思路，做的一个基于Vue的简易UI组件库
+        </p>
+        <h4>项目总结</h4>
+        <p>
+          目前已支持按钮、输入框、网格、布局、Toast、Tab、Popover、Collapse
+        </p>
+        <p>
+          每个组件均经历过需求分析到 <strong>Mocha单元测试</strong> ，并用
+          <strong>Travis ci 实现持续集成</strong>
+        </p>
+        <!--        <p>发布到了npm,并使用Vuepress<strong>制作了官方文档</strong></p>-->
+      </li>
+      <li>
+        <header>
+          <h3>翻译器(fanyi-g)</h3>
+          <span>
                 <a href="https://github.com/Jokerguo/fanyi">源码链接</a>
               </span>
-            </header>
-            <p>使用commander库， <strong>nodejs</strong>调用百度翻译api实现的翻译工具，已发布npm</p>
-          </li>
+        </header>
+        <p>使用commander库， <strong>nodejs</strong>调用百度翻译api实现的翻译工具，已发布npm</p>
+      </li>
 
-          <li class="page2">
-            <header>
-              <h3>会动的皮卡丘</h3>
-              <span>
+      <li class="page2">
+        <header>
+          <h3>会动的皮卡丘</h3>
+          <span>
                 <a href="https://github.com/Jokerguo/Pikachu">源码链接</a>
                 <a href="http://jokerguo.github.io/Pikachu/dist/test.html"
-                  >项目预览</a
+                >项目预览</a
                 >
               </span>
-            </header>
-            <p>
-              主要使用 <strong>CSS3和动画</strong> 制作而成，用到了
-              <strong>模块化</strong> ，最后对项目进行了MVC的封装
-            </p>
-            <!--        <p>主要使用了CSS3和动画制作而成,让我对CSS的理解、MVC设计模式、模块化得到更多理解</p>-->
-          </li>
-          <!-- <li>
-          <header>
-              <h3>简易画板</h3>
-              <span>
-        <a href="https://github.com/Jokerguo/canvas-demo-1">源码链接</a>
-        <a href="http://jokerguo.github.io/canvas-demo-1/index.html">项目预览</a>
-      </span>
-          </header>
-          <p>通过<strong>canvas</strong>制作而成的简易画板</p>
-          <h4>项目描述</h4>
-          <p>整个页面都是你的画板,可以尽情发挥</p>
-      </li> -->
-        </ul>
-      </section>
-
-      <!-- 教育经历 -->
-      <section class="education">
-        <h2>教育经历</h2>
+        </header>
         <p>
-          <span><time>2014年</time>~<time>2019年</time></span>
-          江苏联合职业技术学院 | 软件技术
+          主要使用 <strong>CSS3和动画</strong> 制作而成，用到了
+          <strong>模块化</strong> ，最后对项目进行了MVC的封装
         </p>
-      </section>
-    </article>
-    <script src="./main.js"></script>
-  </body>
+        <!--        <p>主要使用了CSS3和动画制作而成,让我对CSS的理解、MVC设计模式、模块化得到更多理解</p>-->
+      </li>
+      <!-- <li>
+      <header>
+          <h3>简易画板</h3>
+          <span>
+    <a href="https://github.com/Jokerguo/canvas-demo-1">源码链接</a>
+    <a href="http://jokerguo.github.io/canvas-demo-1/index.html">项目预览</a>
+  </span>
+      </header>
+      <p>通过<strong>canvas</strong>制作而成的简易画板</p>
+      <h4>项目描述</h4>
+      <p>整个页面都是你的画板,可以尽情发挥</p>
+  </li> -->
+    </ul>
+  </section>
+
+  <!-- 教育经历 -->
+  <section class="education">
+    <h2>教育经历</h2>
+    <p>
+      <span><time>2014年</time>~<time>2019年</time></span>
+      江苏联合职业技术学院 | 软件技术
+    </p>
+  </section>
+</article>
+<script src="./main.js"></script>
+</body>
 </html>
